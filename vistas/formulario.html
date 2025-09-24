@@ -16,20 +16,65 @@
         </nav>
     </header>
     <h1>Manejo Formulario</h1>
-    <form action="#" method="post">
+    <form action="#" method="get">
         <div>
             <label for="usuario">Ingrese el usuario</label>
             <input type="text" name="usuario" id="usuario" placeholder="Ingrese su usuario" maxlength="20"
                 minlength="3">
         </div>
+        <br>
         <div>
             <label for="">Ingrese contraseña</label>
             <input type="password" name="password" id ="password">
         </div>
-
+        <br>
+        <!--Ingresamos la edad del estudiante-->
+        <div>
+            <label for="edad">Ingrese la edad del estudiante</label>
+            <input type="number" name="edad" id="edad" maxlength="3" placeholder="Ingrese su edad" required>
+        </div>
+        <br>
+        <!--Ingresamos la fecha de nacimiento-->
+        <div>
+            <label for="fecha">Ingrese fecha de nacimiento</label>
+            <input type="date" name="fecha" id="fecha">
+        </div>
+        <br>
+        <!--select-->
+        <div>
+            <label for="color">Ingrese el color</label>
+            <select name="color" id="color">
+            <option value ="azul">Amarillo</option>
+            <option value="rojo">Rojo</option>
+            <option value="verde">Verde</option>
+            </select>
+        </div>
+        <br>
+        <!--Ingreso de una area de texto-->
+        <div>
+            <label for="comentario">Ingrese su comentario</label>
+            <textarea name="comentario" id="comentario" rows="15" cols="100"></textarea>
+        </div>
+        <br>
+        <!--Radio buttons-->
+        <div>
+            <label for="genereo">Seleccione el genereo</label>
+            <input type="radio" name="genereo" id="masculino" value="masculino">
+            <label for="">Masculino</label>
+            <input type="radio" name="genero" id="femenino" value ="femenino">
+            <label for="">femenino</label>
+            <input type="radio" name="genero" id="otro" value ="otro">
+            <label for="">Otro</label>
+        </div>
+        <br>
         <!--voy a crear un boton-->
         <div>
             <input type="submit" value="Enviar formulario">
+        </div>
+        <br>
+         <!--voy a crear un boton-->
+        <div>
+            <button type="reset">Cancelar informacion</button>
         </div>
     </form>
     <!--Insertar una imagen-->
