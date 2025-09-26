@@ -4,21 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos/estios.css">
     <title>tablas</title>
-    <style>
+<!--style>
         body {
             margin: auto;
-            color: rgb(164, 250, 34);
+            color: rgb(0,0,0);
+            background-color: rgb(139,16,16);
         }
-    </style>
+
+        /*Aqui va un comentario
+        Dar estilos a una clase*/
+
+        .contenedor{
+            background: #ffffff;
+            color: rgb(110,116,230);
+        }
+
+        /*Utilizamos el elemento ID*/
+
+        #titulo{
+            color: blue;
+            text-align: center;
+            font-size: 15px;
+        }
+
+    </style-->
 </head>
 
 <body>
-    <h1
-        style="color:red; font-size:25px; text-align: center; background-color: yellow; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
-        Tabla de posiciones campeonato ecuatoriano 2025</h1>
-    <div style="background-color: blue;">
-        <table borde="1px">
+    <div class="titulo-contenedor">
+    <h1 id="titulo">Tabla de posiciones campeonato ecuatoriano 2025 </h1>
+    </div>
+    <div class="contenedor">
+        <table border="1px">
             <thehead>
                 <tr>
                     <th>ID Equipo</th>
@@ -66,8 +85,8 @@
             </tfoot>
         </table>
     </div>
-    <div>
-        <a href="../index.html" style="background: yellow;">Ir a index</a>
+    <div class="contenedor">
+        <a href="../index.html" >Ir a index</a>
     </div>
 </body>
 

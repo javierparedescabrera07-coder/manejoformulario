@@ -1,0 +1,20 @@
+/*selctor universal*/
+* {
+    margin: auto;
+    /*color: rgb(243, 255, 250);
+    background-image:url(../img/3607424.jpg);
+    background-repeat: no-repeat;*/
+
+}
+
+/*estilos para el contenedor del titulo */
+.titulo-contenedor {
+    border: 1px solid #000;
+    background: rgb(29, 141, 79);
+    /* border-radius: 50%;*/
+    width: 700px;
+    height: 50px;
+    padding: 100px 50px 20px 50px;
+    margin: 100px 20px 50px 30px;
+    box-shadow: 5px 5px 5px rgb(31, 248, 23);
+}
