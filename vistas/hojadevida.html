@@ -1,35 +1,82 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Hoja de vida</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      height: 100vh;
+    }
+    .left-column {
+      background-color: #1a3b5d;
+      padding: 30px 20px;
+      box-sizing: border-box;
+      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+      border-right: 4px solid #0f2a4a;
+      vertical-align: top;
+    }
+    .right-column {
+      background-color: #ffffff;
+      padding: 40px 30px;
+      box-sizing: border-box;
+      box-shadow: inset 0 0 15px #ddd;
+      vertical-align: top;
+    }
+    .photo-box {
+      width: 180px;
+      height: 180px;
+      background-color: #ffffff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      box-sizing: border-box;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      border: 3px solid #1a3b5d;
+      margin: 0 auto;
+    }
+    a {
+      color: #dcdcdc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
 <!--CONTENEDOR PRINCIPAL-->
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<table border="0" cellspacing="0" cellpadding="0">
   <tr>
     <!--COLUMNA IZQUIERDA-->
-    <td width="35%" valign="top" bgcolor="#1a3b5d">
+    <td width="35%" class="left-column">
       <table width="100%" border="0" cellspacing="20" cellpadding="0">
         <tr>
           <td align="center">
             <!--Foto-->
-            <div style="width:160px; height:160px; background-color:#ffffff; border-radius:50%; display:flex; align-items:center; justify-content:center;">
-              <img src="../img/yo.jpg" width="150" height="150" style="border-radius:50%;">
+            <div class="photo-box">
+              <img src="../img/yo.jpg" width="150" height="150" style="border-radius:50%;" />
             </div>
-            <br>
-            <font size="5" color="#ffffff"><b>Javier Paredes</b></font><br>
+            <br />
+            <font size="5" color="#ffffff"><b>Javier Paredes</b></font><br />
             <font size="3" color="#dcdcdc">Desarrollador Web</font>
           </td>
         </tr>
         <!--CONTACTO-->
         <tr>
           <td>
-            <font size="4" color="#ffffff"><b>CONTACTO</b></font><br><br>
+            <font size="4" color="#ffffff"><b>CONTACTO</b></font><br /><br />
             <font size="3" color="#ffffff">
-              📞 <a href="https://www.whatsapp.com/?lang=es_LA">(+593) 99 985 2687 </a><br>
-              ✉️ <a href="https://workspace.google.com/intl/es-419/gmail/">javier.paredes.cabrera.07@gmail.com </a><br>
+              📞 <a href="https://www.whatsapp.com/?lang=es_LA">(+593) 99 985 2687 </a><br />
+              ✉️ <a href="https://workspace.google.com/intl/es-419/gmail/">javier.paredes.cabrera.07@gmail.com </a><br />
               🌐 <a href="https://itq.edu.ec/">www.itq.edu.ec</a>
             </font>
           </td>
@@ -37,12 +84,12 @@
         <!-- HABILIDADES -->
         <tr>
           <td>
-            <font size="4" color="#ffffff"><b>HABILIDADES</b></font><br><br>
+            <font size="4" color="#ffffff"><b>HABILIDADES</b></font><br /><br />
             <font size="3" color="#ffffff">
-              • Liderazgo<br>
-              • Comunicación al publico<br>
-              • Gestión trabajos<br>
-              • Resolución de problemas<br>
+              • Liderazgo<br />
+              • Comunicación al publico<br />
+              • Gestión trabajos<br />
+              • Resolución de problemas<br />
               • Trabajo en equipo
             </font>
           </td>
@@ -50,16 +97,15 @@
         <!-- EDUCACIÓN -->
         <tr>
           <td>
-            <font size="4" color="#ffffff"><b>EDUCACIÓN</b></font><br><br>
+            <font size="4" color="#ffffff"><b>EDUCACIÓN</b></font><br /><br />
             <font size="3" color="#ffffff">
+              <b>Bachiller Informatico</b><br />
+              Unidad Educativa Salesiana Don Bosco<br />
+              2023-2024<br /><br />
 
-              <b>Bachiller Informatico</b><br>
-              Unidad Educativa Salesiana Don Bosco<br>
-              2023-2024<br><br>
-
-              <b>Carrera en Desarrollo Web</b><br>
-              Instituto Tecnologico Quito<br>
-              2025-2026<br><br>
+              <b>Carrera en Desarrollo Web</b><br />
+              Instituto Tecnologico Quito<br />
+              2025-2026<br /><br />
             </font>
           </td>
         </tr>
@@ -67,15 +113,17 @@
     </td>
 
     <!-- COLUMNA DERECHA -->
-    <td width="65%" valign="top" bgcolor="#ffffff">
+    <td width="65%" class="right-column">
       <table width="100%" border="0" cellspacing="20" cellpadding="0">
         <!-- ACERCA DE MÍ -->
         <tr>
           <td>
             <font size="5" color="#1a3b5d"><b>ACERCA DE MÍ</b></font>
-            <hr>
+            <hr />
             <font size="3">
-                Soy un desarrollador web apasionado por la creación de soluciones digitales innovadoras y funcionales. Con habilidades en HTML, CSS, JavaScript , me esfuerzo por diseñar experiencias de usuario atractivas y eficientes. Mi objetivo es contribuir al éxito de proyectos web mediante la implementación de tecnologías avanzadas y prácticas de desarrollo ágil.
+              Soy un desarrollador web apasionado por la creación de soluciones digitales innovadoras y funcionales. Con habilidades en HTML, CSS, JavaScript , me esfuerzo por diseñar
+              experiencias de usuario atractivas y eficientes. Mi objetivo es contribuir al éxito de proyectos web mediante la implementación de tecnologías avanzadas y prácticas de
+              desarrollo ágil.
             </font>
           </td>
         </tr>
@@ -84,12 +132,15 @@
         <tr>
           <td>
             <font size="5" color="#1a3b5d"><b>EXPERIENCIA LABORAL</b></font>
-            <hr>
+            <hr />
 
-            <font size="4"><b>Auxiliar de Informatica</b></font><br>
-            <font size="3" color="#808080">EP PETROECUADOR | 2023-2025</font><br>
-            <font size="3">Auxiliar de Informática responsable de brindar soporte técnico a los usuarios, mantener y actualizar equipos y sistemas informáticos, así como colaborar en la administración de redes</font>
-            <br><br>
+            <font size="4"><b>Auxiliar de Informatica</b></font><br />
+            <font size="3" color="#808080">EP PETROECUADOR | 2023-2025</font><br />
+            <font size="3">
+              Auxiliar de Informática responsable de brindar soporte técnico a los usuarios, mantener y actualizar equipos y sistemas informáticos, así como colaborar en la administración de
+              redes
+            </font>
+            <br /><br />
           </td>
         </tr>
       </table>
