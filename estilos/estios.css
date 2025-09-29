@@ -18,3 +18,46 @@
     margin: 100px 20px 50px 30px;
     box-shadow: 5px 5px 5px rgb(31, 248, 23);
 }
+.contenedor1{
+    width: 200px;
+    border: 5px solid #000;
+    position: relative;
+    top: -100px;
+    left: 200px;
+}
+.contenedor{
+    width: 90%;
+    border: 1px solid #000;
+}
+.tabla{
+    border-collapse: collapse;
+    width: 100%;
+
+}
+th,td{
+border: 1px solid #07ab0a;
+padding: 8px;
+text-align: left;
+}
+th{
+    background-color: #b3f87b;
+    font-weight: bold;
+    text-align: center;
+}
+tr:nth-child(even){
+    background-color: #f5fd7d;
+}
+/*pseudo hover*/
+tr:hover{
+background-color: #447702;
+}
+a{
+    color: #a50404;
+    text-decoration: none;
+}
+a:hover{
+    color: #0ac513;
+}
+a:visited{
+    color:#045843
+}
